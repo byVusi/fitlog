@@ -1,0 +1,157 @@
+@import url(layout.css);
+@import url(typography.css);
+@import url(colors.css);
+@import url(components.css);
+
+:root {
+    font-size: 16px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: relative;
+    overflow-y: hidden;
+    background-color: hsl(0, 0%, 96%);
+}
+
+header,
+main,
+.workout-section,
+.navigation,
+.workout-preview,
+.overlay,
+.workout-card {
+    width: 100%;
+}
+
+header {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: inherit;
+}
+
+main {
+    height: calc(100vh - 96px - 82.88px);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    position: relative;
+}
+
+main::-webkit-scrollbar {
+    display: none;
+}
+
+.navigation {
+    height: 82.08px;
+    border-top: 1px solid lightgray;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.navigation > div {
+    cursor: pointer;
+    color: hsl(0, 0%, 60%);
+}
+
+.navigation .active {
+    color: hsl(216, 98%, 52%);
+}
+
+.navigation .active:active {
+    color: hsl(216, 98%, 42%);
+}
+
+.navigation i {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.navigation span {
+    font-size: 0.75rem;
+}
+
+[alt="profile picture"] {
+    width: 3rem;
+}
+
+.workout-preview {
+    height: calc(66.6667vh);
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.workout-preview-background-image {
+    height: 100%;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: inherit;
+}
+
+.overlay {
+    height: inherit;
+    border-radius: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.8) 80%,  rgba(0,0,0,1) 100%);
+}
+
+.workout-preview-text {
+    padding-left: 0.75rem;
+    position: absolute;
+    bottom: 1.5rem;
+    color: white;
+}
+
+.workout-preview-text h2 {
+    margin-bottom: 1rem;
+}
+
+.secondary-nav {
+    text-align: right;
+    position: sticky;
+    top: 0;
+    right: 0;
+    z-index: 9998;
+    background-color: hsl(0, 0%, 96%);
+}
+
+.secondary-nav+h2 {
+    padding-bottom: 2rem;
+}
+
+.cta-link {
+    font-size: 1rem;
+    padding: 1rem 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    cursor: pointer;
+    color: hsl(216, 98%, 52%);
+}
+
+.cta-button:active {
+    background-color: hsl(216, 98%, 45%);
+}
+
+.cta-link:active {
+    color: hsl(216, 98%, 42%);
+}

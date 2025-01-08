@@ -1,0 +1,141 @@
+.pill {
+    font-size: 10px;
+    border-radius: 1.5rem;
+    list-style: none;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.workout-card {
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    position: relative;
+    box-shadow: 0.125rem 0.125rem 0.125rem hsl(216, 8%, 94%);
+    background-color: white;
+}
+
+.workout-card:last-of-type {
+    margin-bottom: 1.5rem;
+}
+
+.workout-card-image-section {
+    padding: 1rem 0 0.5rem 1rem;
+}
+
+.workout-card-image {
+    width: 108px;
+    border-radius: 0.5rem;
+}
+
+.workout-card-description {
+    font-size: 0.75rem;
+    color: hsl(0, 0%, 45%);
+}
+
+.workout-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+    padding-top: 1rem;
+}
+
+.workout-card-link {
+    font-size: 1rem;
+    padding: 0;
+    position: absolute;
+    bottom: 0.5rem;
+    right: 1rem;
+    cursor: pointer;
+    color: hsl(216, 98%, 52%);
+}
+
+.workout-card-link:active {
+    color: hsl(216, 98%, 42%);
+}
+
+.cta-button {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    display: block;
+    margin-top: 1rem;
+    margin: 1rem auto;
+    outline: none;
+    border: none;   
+    cursor: pointer;
+    border-radius: 0.5rem;
+    background-color: hsl(216, 98%, 52%);
+    color: white;
+}
+
+.cta-button:active {
+    background-color: hsl(216, 98%, 48%);
+}
+
+.cta-button[disabled] {
+    background-color: hsl(210, 16%, 93%);
+    color: hsl(210, 14%, 70%);
+    cursor: not-allowed;
+}
+
+.cta-button[disabled]:active {
+    background-color: hsl(210, 16%, 93%);
+    color: hsl(210, 14%, 70%);
+}
+
+form {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.125rem 0.125rem 0.125rem hsl(216, 8%, 94%);
+    background-color: white;
+}
+
+form h2 {
+    margin-bottom: 1.5rem;
+}
+
+.form-field {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.0625rem solid hsl(0, 0%, 93%);
+}
+
+.form-field label {
+    width: 2.5rem;
+    font-size: 0.875rem;
+    color: hsl(0, 0%, 45%);
+}
+
+.form-field:nth-of-type(1) div label::after,
+.form-field:nth-of-type(2) div label::after,
+.form-field:nth-of-type(3) div label::after {
+    content: "*";
+    padding-left: 4px;
+    color: hsl(354, 70%, 54%);
+}
+
+.form-field input {
+    border: none;
+    outline: none;
+    text-align: right;
+    caret-color: hsl(216, 98%, 52%);
+}
+
+.feedback-bubble {
+    width: calc(100% - 0.0625rem*2);
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+}
+
+.feedback-bubble-text {
+    padding: 1rem;
+}
+
+.loading-wheel {
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.loading-wheel img {
+    width: 2rem;
+}

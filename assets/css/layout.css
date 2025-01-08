@@ -1,0 +1,45 @@
+header div,
+.list-of-pills,
+.navigation,
+.navigation div,
+.workout-card,
+.form-field {
+    display: flex;
+}
+
+header div {
+    justify-content: space-between;
+}
+
+header div,
+.list-of-pills,
+.navigation,
+.navigation div {
+    align-items: center;
+}
+
+.navigation {
+    justify-content: space-around;
+}
+
+.navigation div {
+    flex-flow: column nowrap;
+}
+
+.cta-link,
+.workout-card-link {
+    display: inline-flex;
+}
+
+.workout-card,
+.form-field {
+    column-gap: 16px;
+}
+
+.form-field label {
+    display: inline-block;
+}
+
+.form-field input {
+    flex: 1;
+}
