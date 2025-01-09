@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./assets/media/icons/icon-32x32.png" sizes="any">
-    <link rel="icon" href="./assets/media/icons/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="./assets/media/icons/apple-touch-icon.png">
-    <link rel="manifest" href="./manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="FitLog">
 
     <!-- Splash Screens -->
     <link rel="apple-touch-startup-image"
@@ -136,11 +135,16 @@
         media="screen and (device-width: 744px) and (device-height: 1133px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
         href="splash_screens/8.3__iPad_Mini_portrait.png">
 
+    <link rel="icon" href="./assets/media/icons/icon-32x32.png" sizes="any">
+    <link rel="icon" href="./assets/media/icons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./assets/media/icons/apple-touch-icon.png">
+    
+    <link rel="manifest" href="./manifest.json">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="assets/css/main.css">
     <title>FitLog</title>
 </head>
-<body>
+<body ontouchstart="">
     <header>
         <div>
             <h1>Today</h1>
