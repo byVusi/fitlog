@@ -28,7 +28,7 @@
     }
   ],
   "id": "/fitlog/index.html",
-  "start_url": "/index.html",
+  "start_url": "/fitlog/index.html",
   "background_color": "hsl(0, 0%, 96%)",
   "theme_color": "hsl(216, 98%, 52%)",
   "display": "standalone",
