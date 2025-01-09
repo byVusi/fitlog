@@ -16,18 +16,18 @@
   ],
   "screenshots": [
     {
-      "src": "/assets/media/brand/desktop-screenshot.jpeg",
+      "src": "./assets/media/brand/desktop-screenshot.jpeg",
       "sizes": "1280x720",
       "type": "image/jpeg",
       "form_factor": "wide"
     },
     {
-      "src": "/assets/media/brand/mobile-screenshot_1.jpeg",
+      "src": "./assets/media/brand/mobile-screenshot_1.jpeg",
       "sizes": "720x1280",
       "type": "image/jpeg"
     }
   ],
-  "start_url": "/index.html",
+  "start_url": "./index.html",
   "background_color": "hsl(0, 0%, 96%)",
   "theme_color": "hsl(216, 98%, 52%)",
   "display": "standalone",
