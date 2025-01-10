@@ -1,38 +1,36 @@
 {
-  "name": "FitLog",
+  "name": "Fitness Logger",
   "short_name": "FitLog",
   "description": "Track and manage your workouts effectively.",
-  "lang": "en",
   "categories": ["health", "fitness"],
   "icons": [
     {
-      "src": "/fitlog/assets/media/icons/icon-192x192.png",
+      "src": "assets/media/icons/icon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/media/images/icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/fitlog/assets/media/icons/icon-512x512.png",
+      "src": "assets/media/images/icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
-    }
-  ],
-  "screenshots": [
-    {
-      "src": "/fitlog/assets/media/brand/desktop-screenshot.jpeg",
-      "sizes": "1515x852",
-      "type": "image/jpeg",
-      "form_factor": "wide"
     },
     {
-      "src": "/fitlog/assets/media/brand/mobile-screenshot.jpeg",
-      "sizes": "448x796",
-      "type": "image/jpeg"
+      "src": "assets/media/images/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
     }
   ],
-  "id": "/fitlog/index.html",
-  "start_url": "/fitlog/index.html",
+  "id": "fitlog/v1",
+  "start_url": "https://byvusi.github.io/fitlog",
   "background_color": "#f5f5f5",
-  "theme_color": "#000000",
+  "theme_color": "#080F0F",
   "display": "standalone",
-  "orientation": "portrait"
+  "orientation": "portrait-primary",
+  "scope": "/fitlog/",
+
 }
