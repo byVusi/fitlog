@@ -31,6 +31,5 @@
   "theme_color": "#080F0F",
   "display": "standalone",
   "orientation": "portrait-primary",
-  "scope": "/fitlog/",
-
+  "scope": "/fitlog/"
 }
