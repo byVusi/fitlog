@@ -28,7 +28,7 @@
   "screenshots": [
     {
       "src": "assets/media/images/mobile-screenshot_1.png",
-      "sizes": "449x798",
+      "sizes": "448x797",
       "type": "images/png",
       "form_factor": "narrow",
       "label": "Home screen view showing main navigation and the day's workout"
@@ -46,6 +46,5 @@
   "background_color": "#f5f5f5",
   "theme_color": "#080F0F",
   "display": "standalone",
-  "orientation": "portrait-primary",
-  "scope": "/fitlog/"
+  "orientation": "portrait-primary"
 }
