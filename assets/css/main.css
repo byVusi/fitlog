@@ -87,10 +87,6 @@ main::-webkit-scrollbar {
     font-size: 0.75rem;
 }
 
-[alt="profile picture"] {
-    width: 3rem;
-}
-
 .workout-preview {
     height: calc(66.6667vh);
     border-radius: 0.5rem;
