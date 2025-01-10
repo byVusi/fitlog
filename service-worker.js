@@ -2,14 +2,15 @@ const CACHE_NAME = "fitlog-cache-v1";
 const urlsToCache = [
 	"/",
 	"/index.html",
-	"/assets/css/layoout.css",
-	"/assets/css/typography.css",
-	"/assets/css/colors.css",
-	"/assets/css/components.css",
-	"/assets/css/main.css",
 	"/assets/media/images/profile-pic.jpg",
-	"/assets/media/icons/icon-192x192.png",
-	"/assets/media/icons/icon-512x512.png",
+	"/assets/fonts/Inter/Inter-VariableFont_opsz,wght.ttf",
+	"/assets/fonts/Open_Sans-VariableFont_wdth,wght.ttf",
+	"assets/css/layout.css",
+	"assets/css/typography.css",
+	"assets/css/colors.css",
+	"assets/css/typography.css",
+	"assets/css/main.css",
+	"assets/js/main.js",
 ];
 
 // Install event
