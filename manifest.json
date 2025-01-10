@@ -10,19 +10,35 @@
       "type": "image/png"
     },
     {
-      "src": "assets/media/images/icons/icon-192x192.png",
+      "src": "assets/media/icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "assets/media/images/icons/icon-512x512.png",
+      "src": "assets/media/icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     },
     {
-      "src": "assets/media/images/icons/icon.svg",
+      "src": "assets/media/icons/icon.svg",
       "sizes": "any",
       "type": "image/svg+xml"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "assets/media/images/mobile-screenshot_1.png",
+      "sizes": "449x798",
+      "type": "images/png",
+      "form_factor": "narrow",
+      "label": "Home screen view showing main navigation and the day's workout"
+    },
+    {
+      "src": "assets/media/images/mobile-screenshot_2.png",
+      "sizes": "448x797",
+      "type": "images/png",
+      "form_factor": "narrow",
+      "label": "Workout screen showing main navigation and the exercises in the day's workout"      
     }
   ],
   "id": "fitlog/v1",
