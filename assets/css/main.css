@@ -67,7 +67,8 @@ main::-webkit-scrollbar {
 
 .navigation > div {
     cursor: pointer;
-    color: hsl(0, 0%, 60%);
+    color: hsl(0, 0%, 50%);
+    padding-top: 8px;
 }
 
 .navigation .active {
@@ -80,7 +81,7 @@ main::-webkit-scrollbar {
 
 .navigation i {
     font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
 }
 
 .navigation span {

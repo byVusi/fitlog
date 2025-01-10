@@ -21,6 +21,7 @@ header div {
 
 .navigation {
     justify-content: space-around;
+    align-items: flex-start;
 }
 
 .navigation div {
