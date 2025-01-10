@@ -1,4 +1,8 @@
-import { capitaliseFirstLetter, filterWorkoutByDay, getWorkoutTags } from "./exercises.js";
+import {
+	capitaliseFirstLetter,
+	filterWorkoutByDay,
+	getWorkoutTags,
+} from "./exercises.js";
 import { getCurrentDay } from "./utils.js";
 
 /**
@@ -89,7 +93,13 @@ function buildButton(text, iconName = "") {
  * @param {string} [href="#"] - The link URL.
  * @returns {HTMLElement} The created link element.
  */
-function buildLink(text, iconName = "", className = "cta-link", position = "left", href = "#") {
+function buildLink(
+	text,
+	iconName = "",
+	className = "cta-link",
+	position = "left",
+	href = "#"
+) {
 	const link = buildElement("a", className);
 	const span = buildElement("span");
 	span.textContent = text;
@@ -121,18 +131,28 @@ function buildLink(text, iconName = "", className = "cta-link", position = "left
  */
 function buildWorkoutCards(workoutObj) {
 	return Object.values(workoutObj)
-		.filter((workout) => workout && typeof workout === "object" && !Array.isArray(workout))
+		.filter(
+			(workout) =>
+				workout && typeof workout === "object" && !Array.isArray(workout)
+		)
 		.map((workout) => {
 			const card = buildElement("div", "workout-card");
 
 			// Image section
-			const cardImageSection = buildElement("div", "workout-card-image-section");
+			const cardImageSection = buildElement(
+				"div",
+				"workout-card-image-section"
+			);
 			const image = buildElement("img", "workout-card-image");
 			image.src = workout.image;
+			image.alt = workout.alt;
 			cardImageSection.appendChild(image);
 
 			// Details section
-			const cardDetailsSection = buildElement("div", "workout-card-details-section");
+			const cardDetailsSection = buildElement(
+				"div",
+				"workout-card-details-section"
+			);
 			const title = buildHeading(workout.name, "h3");
 			const description = buildElement("p", "workout-card-description");
 			description.textContent = workout.description;
@@ -161,7 +181,10 @@ function buildWorkoutPreview(backgroundColor = "lightgray", color = "black") {
 	document.querySelector("html").dataset.page = "today";
 
 	const section = buildElement("section", "workout-preview");
-	const backgroundImage = buildElement("div", "workout-preview-background-image");
+	const backgroundImage = buildElement(
+		"div",
+		"workout-preview-background-image"
+	);
 	backgroundImage.style.backgroundImage = `url(${currentWorkout.image})`;
 
 	const overlay = buildElement("div", "overlay");
@@ -254,15 +277,34 @@ function buildExercisePage(title) {
 	const sectionTitle = buildHeading(title, "h2");
 
 	// Create form fields
-	const setsField = buildFormField(DEFAULTS.sets.id, DEFAULTS.sets.text, "number");
-	const repetitionsField = buildFormField(DEFAULTS.repetitions.id, DEFAULTS.repetitions.text, "number");
-	const measurementField = buildFormField(DEFAULTS.measurement.id, DEFAULTS.measurement.text, "number");
+	const setsField = buildFormField(
+		DEFAULTS.sets.id,
+		DEFAULTS.sets.text,
+		"number"
+	);
+	const repetitionsField = buildFormField(
+		DEFAULTS.repetitions.id,
+		DEFAULTS.repetitions.text,
+		"number"
+	);
+	const measurementField = buildFormField(
+		DEFAULTS.measurement.id,
+		DEFAULTS.measurement.text,
+		"number"
+	);
 	const unitField = buildFormField(DEFAULTS.unit.id, DEFAULTS.unit.text);
 
 	// Create button
 	const button = buildButton("Save data");
 
-	formElement.append(sectionTitle, setsField, repetitionsField, measurementField, unitField, button);
+	formElement.append(
+		sectionTitle,
+		setsField,
+		repetitionsField,
+		measurementField,
+		unitField,
+		button
+	);
 	section.append(createBackNavigation(), formElement);
 
 	return section;
