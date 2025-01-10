@@ -282,6 +282,7 @@ function buildExercisePage(title) {
 		DEFAULTS.sets.text,
 		"number"
 	);
+	setsField.focus();
 	const repetitionsField = buildFormField(
 		DEFAULTS.repetitions.id,
 		DEFAULTS.repetitions.text,
